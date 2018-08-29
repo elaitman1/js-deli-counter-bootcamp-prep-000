@@ -1,14 +1,18 @@
-function takeANumber(deliLine, name) {
-  deliLine.push(name)
-  return `Welcome, ${name}. You are number ${deliLine.length} in line.`
+function takeANumber(deliLine) {
+  var total = deliLine.length
+  
+  `Welcome, you are number ${deliLine.length + 1}.`
+ 
 }
+
+I would use .length to see the last person in line. 
+
 
 function nowServing(deliLine){
 if (deliLine.length === 0){
   return "There is nobody waiting to be served!";
 }else{
-  var shifted = deliLine.shift();
-  return `Currently serving ${shifted}.`
+  return `Currently serving ${deliLine.shift()}.`
 }
 }
 
